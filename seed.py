@@ -1,7 +1,8 @@
-from lib.models import User,db
+# seed.py
+from lib.models import User, db
 from app import create_app
 
-app=create_app()
+app = create_app()
 
 with app.app_context():
     db.drop_all()
@@ -17,4 +18,4 @@ with app.app_context():
     db.session.add_all(users)
     db.session.commit()
 
-    print('Seeded with data')
+    print("Seeded with data.")
