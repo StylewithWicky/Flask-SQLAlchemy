@@ -19,3 +19,4 @@ with app.app_context():
     db.session.commit()
 
     print("Seeded with data.")
+#SEEDED DATA
